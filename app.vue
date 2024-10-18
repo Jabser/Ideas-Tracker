@@ -6,6 +6,7 @@ import "@appwrite.io/pink-icons";
 <template>
   <div>
     <NuxtLayout>
+      <Navbar />
       <NuxtPage />
     </NuxtLayout>
   </div>
