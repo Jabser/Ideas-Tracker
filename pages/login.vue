@@ -27,17 +27,15 @@ const handleRegistration = async (event) => {
 </script>
 
 <template>
-  <div class="u-max-width-650" style="margin: 0 auto;">
-    <section class="card u-margin-32">
-      <h2 class="eyebrow-heading-2">Login/Register</h2>
-      <AuthForm v-if="isSignUp" :handle-submit="handleRegistration" submit-type="Sign Up"></AuthForm>
-      <AuthForm v-else :handle-submit="handleLogin" submit-type="Log In"></AuthForm>
-      <button v-if="isSignUp" @click="isSignUp = false" class="u-margin-block-start-16">
-        Already have an account? Log in
-      </button>
-      <button v-else @click="isSignUp = true" class="u-margin-block-start-16">
-        Don't have an account? Sign up
-      </button>
-    </section>
+  <div class="contaier border border-gray-900/10 rounded-lg p-6 px-6 space-y-4">
+    <h2 class="text-5xl font-semibold mb-4">Login/Register</h2>
+    <AuthForm v-if="isSignUp" :handle-submit="handleRegistration" submit-type="Sign Up"></AuthForm>
+    <AuthForm v-else :handle-submit="handleLogin" submit-type="Log In"></AuthForm>
+    <button v-if="isSignUp" @click="isSignUp = false" class="underline underline-offset-2 hover:text-blue-800 transition ease-in-out duration-300">
+      Already have an account? Log in
+    </button>
+    <button v-else @click="isSignUp = true" class="underline underline-offset-2 hover:text-blue-800 transition ease-in-out duration-300">
+      Don't have an account? Sign up
+    </button>
   </div>
 </template>

@@ -4,25 +4,19 @@ const user = useUserSession();
 </script>
 
 <template>
-  <div class="u-max-width-650" style="margin: 0 auto;">
+  <div>
     <!-- Idea form component for logged in users -->
-    <section v-if="user.current.value" class="card u-margin-32">
+    <section v-if="user.current.value" class="border border-gray-900/10 rounded-lg p-6 mb-6">
       <IdeasForm />
     </section>
 
-    <section v-else class="card u-margin-32">
+    <section v-else class="border border-gray-900/10 rounded-lg p-6 mb-6">
       <div class="container">
-        <p class="body-text-1" style="width: 100%;">
-          Please login to submit an idea.
+        <p>
+          Please <NuxtLink href="/login" class="underline underline-offset-2 font-bold hover:text-blue-800 transition ease-in-out duration-300">login</NuxtLink> to submit an idea.
         </p>
       </div>
     </section>
-    <IdeasList />
+    <IdeasList class="border border-gray-900/10 rounded-lg p-6" />
   </div>
 </template>
-
-<style>
-article.box {
-  background-color: hsl(var(--color-neutral-0));
-}
-</style>
