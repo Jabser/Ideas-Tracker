@@ -1,13 +1,8 @@
-<script setup>
-import "@appwrite.io/pink";
-import "@appwrite.io/pink-icons";
-</script>
-
 <template>
   <div>
     <NuxtLayout>
       <Navbar />
-      <NuxtPage />
+      <NuxtPage class="container mx-auto pt-6 px-1" />
     </NuxtLayout>
   </div>
 </template>
