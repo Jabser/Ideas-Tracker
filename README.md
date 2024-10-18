@@ -1,5 +1,9 @@
 # Ideas Tracker
-Capture, organize, and track your ideas. Whether you're brainstorming for a project, planning a startup, or just jotting down daily thoughts.
+Capture, organize, and track your ideas. Whether you're brainstorming for a project, planning a startup, or just jotting down daily thoughts. Supports a public list with user submissions through user login.
+
+**Frontend** - [Nuxt.js](https://nuxt.com/)
+
+**Backend** - [Appwrite](https://appwrite.io/)
 
 ## Setup
 
