@@ -1,4 +1,5 @@
 # Ideas Tracker
+Capture, organize, and track your ideas. Whether you're brainstorming for a project, planning a startup, or just jotting down daily thoughts.
 
 ## Setup
 
