@@ -4,7 +4,7 @@ const user = useUserSession();
 </script>
 
 <template>
-  <div class="u-max-width-650" style="margin-inline: auto;">
+  <div class="u-max-width-650" style="margin: 0 auto;">
     <!-- Idea form component for logged in users -->
     <section v-if="user.current.value" class="card u-margin-32">
       <IdeasForm />
@@ -20,6 +20,7 @@ const user = useUserSession();
     <IdeasList />
   </div>
 </template>
+
 <style>
 article.box {
   background-color: hsl(var(--color-neutral-0));
