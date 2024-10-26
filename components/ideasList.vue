@@ -13,7 +13,7 @@ import { TrashIcon } from '@heroicons/vue/24/outline'
       <h4 class="text-6xl font-semibold mb-4">Latest Ideas</h4>
       <ul>
         <template v-if="ideas.current.value && ideas.current.value.length">
-          <li class="my-6 pb-6 border border-b-1 border-x-0 border-t-0" v-for="idea in ideas.current.value">
+          <li class="my-6 py-6 border border-b-0 border-x-0 border-t-1" v-for="idea in ideas.current.value">
             <div>
               <h5 class="text-3xl font-semibold mb-2">{{ idea.title }}</h5>
               <p class="">{{ idea.description }}</p>
