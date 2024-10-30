@@ -13,7 +13,7 @@ const user = useUserSession();
     <section v-else class="border border-gray-900/10 rounded-lg p-6 mb-6">
       <div class="container">
         <p>
-          Please login to submit an idea.
+          Please <NuxtLink href="/login" class="underline underline-offset-2 font-bold hover:text-blue-800 transition ease-in-out duration-300">login</NuxtLink> to submit an idea.
         </p>
       </div>
     </section>
