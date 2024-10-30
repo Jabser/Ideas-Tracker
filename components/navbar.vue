@@ -21,7 +21,7 @@
           </button>
         </div>
         <!-- Login button if no user logged in -->
-        <NuxtLink v-else href="/login" class="text-sm font-semibold leading-6 py-3 px-7 text-white bg-blue-600 hover:bg-blue-800 transition ease-in-out duration-300 rounded-full">Log in <span aria-hidden="true">&rarr;</span></NuxtLink>
+        <NuxtLink v-else href="/login" class="text-sm font-semibold leading-6 py-3 px-7 text-white bg-blue-600 hover:bg-blue-800 transition ease-in-out duration-300 rounded-full">Log in</NuxtLink>
       </div>
     </nav>
   </header>
