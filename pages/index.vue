@@ -4,7 +4,7 @@ const user = useUserSession();
 </script>
 
 <template>
-  <div class="">
+  <div>
     <!-- Idea form component for logged in users -->
     <section v-if="user.current.value" class="border border-gray-900/10 rounded-lg p-6 mb-6">
       <IdeasForm />
