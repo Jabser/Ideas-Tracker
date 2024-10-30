@@ -5,6 +5,8 @@ Capture, organize, and track your ideas. Whether you're brainstorming for a proj
 
 **Backend** - [Appwrite](https://appwrite.io/)
 
+<br>
+
 ![cover](cover.jpeg)
 
 ## Setup
