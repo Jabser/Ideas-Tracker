@@ -21,30 +21,43 @@ const handleAddIdea = async (event) => {
 
 <template>
   <div>
-    <article class="container padding-0">
-      <h4 class="heading-level-4">Submit Idea</h4>
-      <form @submit.prevent="handleAddIdea" class="u-margin-block-start-16">
-        <ul class="form-list">
-          <li class="form-item">
-            <label class="label">Title</label>
+    <article class="container">
+      <h4 class="text-5xl font-semibold mb-4">Submit Idea</h4>
+      <div class="lg:col-span-3">
+        <form @submit.prevent="handleAddIdea" class="space-y-4">
+          <div>
+            <label class="sr-only" for="name">Title</label>
             <input
-              type="text"
+              class="w-full rounded-lg border border-gray-900/10 p-3"
               placeholder="Title"
               name="title"
+              type="text"
+              id="title"
             />
-          </li>
-          <li class="form-item">
-            <label class="label">Description</label>
+          </div>
+
+          <div>
+            <label class="sr-only" for="message">Description</label>
+
             <textarea
+              class="w-full rounded-lg border border-gray-900/10 p-3"
               placeholder="Description"
               name="description"
-            />
-          </li>
-          <button class="button" aria-label="Submit idea" type="submit">
-            Submit
-          </button>
-        </ul>
-      </form>
+              rows="8"
+              id="description"
+            ></textarea>
+          </div>
+
+          <div class="mt-4">
+            <button
+              type="submit"
+              class="text-sm font-semibold leading-6 py-3 px-7 text-white bg-blue-600 hover:bg-blue-800 transition ease-in-out duration-300 rounded-full"
+            >
+              Submit Idea
+            </button>
+          </div>
+        </form>
+      </div>
     </article>
   </div>
 </template>
