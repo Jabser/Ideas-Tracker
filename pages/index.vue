@@ -20,9 +20,3 @@ const user = useUserSession();
     <IdeasList class="border border-gray-900/10 rounded-lg p-6" />
   </div>
 </template>
-
-<style>
-article.box {
-  background-color: hsl(var(--color-neutral-0));
-}
-</style>
